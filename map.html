@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mab.css">
+    <title>3D Map</title>
+</head>
+<body>
+    <canvas class="canvas"></canvas>
+
+    <main>
+        <div class="info-panel">
+            <div class="card-header">
+                <i class="fa-solid fa-rectangle-xmark"></i>
+                <img src="./asset/buildA.jpg" alt="Building A">
+                <h1 class="card-title">Building A</h1>
+            </div>
+            <div class="info-panel-content-wrapper">
+                <p class="info-panel-lead">
+                    A building has 7 floors and 700 classes. It has an elevator for easy access.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor ligula non orci feugiat, nec vehicula nulla gravida. Phasellus at eros dolor. Sed nec dui libero. Cras non sem orci. Sed malesuada bibendum nulla, vel accumsan dolor pharetra a. Fusce at magna enim. Mauris pulvinar, sapien at tristique faucibus, ligula leo auctor lacus, ut congue augue libero vel leo. Vivamus blandit, turpis nec venenatis sollicitudin, nulla ante ornare mi, et luctus arcu sapien a turpis. Integer in urna libero. Suspendisse potenti.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor ligula non orci feugiat, nec vehicula nulla gravida. Phasellus at eros dolor. Sed nec dui libero. Cras non sem orci. Sed malesuada bibendum nulla, vel accumsan dolor pharetra a. Fusce at magna enim. Mauris pulvinar, sapien at tristique faucibus, ligula leo auctor lacus, ut congue augue libero vel leo. Vivamus blandit, turpis nec venenatis sollicitudin, nulla ante ornare mi, et luctus arcu sapien a turpis. Integer in urna libero. Suspendisse potenti.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor ligula non orci feugiat, nec vehicula nulla gravida. Phasellus at eros dolor. Sed nec dui libero. Cras non sem orci. Sed malesuada bibendum nulla, vel accumsan dolor pharetra a. Fusce at magna enim. Mauris pulvinar, sapien at tristique faucibus, ligula leo auctor lacus, ut congue augue libero vel leo. Vivamus blandit, turpis nec venenatis sollicitudin, nulla ante ornare mi, et luctus arcu sapien a turpis. Integer in urna libero. Suspendisse potenti.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor ligula non orci feugiat, nec vehicula nulla gravida. Phasellus at eros dolor. Sed nec dui libero. Cras non sem orci. Sed malesuada bibendum nulla, vel accumsan dolor pharetra a. Fusce at magna enim. Mauris pulvinar, sapien at tristique faucibus, ligula leo auctor lacus, ut congue augue libero vel leo. Vivamus blandit, turpis nec venenatis sollicitudin, nulla ante ornare mi, et luctus arcu sapien a turpis. Integer in urna libero. Suspendisse potenti.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <section class="progress-bar-container">
+        <label for="progress-bar">Loading...</label>
+        <progress id="progress-bar" value="0" max="100"></progress>
+    </section>
+
+    
+
+    <script src="https://unpkg.com/three@0.136.0/build/three.min.js"></script>
+    <script src="https://unpkg.com/three@0.136.0/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://unpkg.com/three@0.136.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://kit.fontawesome.com/c51717703a.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <script src="/Component/Card_Info.js"></script>
+</body>
+</html>

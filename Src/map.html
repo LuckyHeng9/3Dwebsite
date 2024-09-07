@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Src/mab.css">
+    <title>3D Map</title>
+</head>
+<body>
+    <canvas class="canvas"></canvas>
+
+    <main>
+        <div class="info-panel">
+            <div class="card-header">
+                <i class="fa-solid fa-rectangle-xmark"></i>
+                <img src="./asset/buildA.jpg" alt="Building A">
+                <h1 class="card-title">Building A</h1>
+            </div>
+            <div class="info-panel-content-wrapper">
+                <div class="building-card">
+                    <p class="building-description">Building A is the old building in the University of Phnom Penh. Created in 1993.</p>
+                    <div class="room-info">
+                        <p><strong>100A :</strong> A normal classroom.</p>
+                        <p><strong>101A :</strong> A normal classroom.</p>
+                        <p><strong>102A :</strong> Have a special class.</p>
+                        <p><strong>103A :</strong> Is a physical class and play Batman.</p>
+                        <p><strong>104A :</strong> A normal classroom.</p>
+                        <p><strong>105A :</strong> A normal classroom.</p>
+                        <p><strong>106A :</strong> DEPARTMENT OF ENVIRONMENTAL SCIENCE and RESEARCH OFFICE.</p>
+                        <p><strong>107A(a):</strong> ENGLISH LANGUAGE SUPPORT UNIT.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="progress-bar-container">
+        <label for="progress-bar">Loading...</label>
+        <progress id="progress-bar" value="0" max="100"></progress>
+    </section>
+
+    
+
+    <script src="https://unpkg.com/three@0.136.0/build/three.min.js"></script>
+    <script src="https://unpkg.com/three@0.136.0/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://unpkg.com/three@0.136.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://kit.fontawesome.com/c51717703a.js" crossorigin="anonymous"></script>
+    <script src="/Src/main.js"></script>
+    <script src="/Component/Card_Info.js"></script>
+</body>
+</html>

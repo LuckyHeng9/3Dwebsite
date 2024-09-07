@@ -1,0 +1,214 @@
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }to{
+        opacity: 0.4;
+        transform: translateY(70%);
+    }
+    to{
+        opacity: 0.7;
+        transform: translateY(30%);
+    }
+    
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.fadeInUp {
+    animation: fadeInUp 0.8s ;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100vh;
+    overflow: hidden;
+    width: 100%;
+}
+
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    overflow: hidden;
+    background-color: yellow;
+}
+
+.canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.info-panel {
+    width: 30rem;
+    height: 35rem;
+    position: absolute;
+    left: 64rem;
+    margin-top: 6rem;
+    border: 2px solid blue;
+    border-radius: 0.3rem;
+    z-index: 100;
+    transition: all 1s ;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    cursor: pointer;
+    background: white;
+}
+
+.card-header {
+    position: relative;
+    height: 200px; /* Fixed height for the header */
+    overflow: hidden;
+}
+
+.card-header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all .3s ease-in-out;
+}
+
+.card-title {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: yellow;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    transition: all .3s ease-in-out;
+}
+
+.info-panel-content-wrapper {
+    padding: 1.25rem;
+    overflow-y: auto;
+    background-color: #181a2f;
+    height: calc(100% - 200px); /* Adjusting height to fill remaining space */
+}
+
+.info-panel-lead {
+    color: #000;
+    font-weight: bold;
+    padding: 0 1.25rem;
+}
+
+.fa-solid {
+    font-size: 24px;
+    color: rgb(11, 0, 0);
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.fa-solid:hover {
+    scale: 1.2;
+    rotate: 45deg;
+    color: #000000;
+}
+
+.progress-bar-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.9);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+#progress-bar {
+    width: 30%;
+    height: 2%;
+    margin-top: 0.5%;
+}
+
+.btnlabel {
+    position: absolute;
+    z-index: 100;
+    color: #000000;
+    background: #ffffff;
+    display: flex;
+    padding: 5px 10px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transform: translateY(-66px); 
+    transition: all ;
+    scale: 1.1;
+}
+
+.btnlabel:hover {
+    color: #ffffff;
+    background: #000000;
+}
+
+label .btnlabel {
+    color: white;
+    font-size: 2rem;
+}
+
+.fa-solid {
+    font-size: 40px;
+    color: rgb(11, 0, 0);
+    position: absolute;
+    left: 92%;
+    top: 8px;
+}
+
+.fa-solid:hover {
+    scale: 1.2;
+    rotate: 45deg;
+    color: #000000;
+}
+ /* CSS for loading screen */
+ .loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    z-index: 9999;
+    transition: opacity 1.5s ease-out;
+}
+
+
+.building-card {
+    background-color: #2f3248;
+    border-radius: 15px;
+    padding: 20px;
+    width: 100%;
+}
+
+
+.building-description {
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.room-info p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #fff0f0;
+}
+
+.room-info p strong {
+    color: #fff;
+}
